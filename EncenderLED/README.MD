@@ -2,7 +2,7 @@
 
 Son un ejemplo sencillo de como utilizar la RPi con los pines **GPIO** y **Python**.
 
-Estos scripts permiten controlar **3** Leds conectados a los pines (17,27,22) de la **Raspberry Pi**.
+Estos scripts permiten controlar **3** Leds conectados a los pines (GPIO 17,27,22) de la **Raspberry Pi**.
 
 A continuación un enlace para saber a que pines deben conectarse
 
