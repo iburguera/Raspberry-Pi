@@ -39,5 +39,5 @@ def programaPrincipal():
         GPIO.cleanup() #Limpiar los GPIO  
 
 
-programaPrincipal()                           #Llamamos a la funcion blinkLeds para ejecutar el programa
+programaPrincipal()                           #Llamamos a la funcion programaPrincipal para ejecutar el programa
 
