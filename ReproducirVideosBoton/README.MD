@@ -1,4 +1,4 @@
-### PROGRAMA PYTHON PARA REPRODUCIR VIDEOS EN RAPSBERRY PI ###
+### PROGRAMA PYTHON PARA REPRODUCIR VIDEOS EN RASPBERRY PI ###
 
 Este mini proyecto consiste en reproducir videos almacenados en la **SD** de la **Rapsberry Pi** al pulsar los botones conectados a la placa.
 
