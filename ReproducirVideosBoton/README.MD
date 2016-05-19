@@ -1,6 +1,13 @@
 ### PROGRAMA PYTHON PARA REPRODUCIR VIDEOS EN RASPBERRY PI ###
 
-Este mini proyecto consiste en reproducir videos almacenados en la **SD** de la **Rapsberry Pi** al pulsar los botones conectados a la placa.
+
+
+Este mini proyecto consiste en reproducir videos almacenados en la **SD** de la **Raspberry Pi** al pulsar los botones conectados a la placa. Tenemos que instalar el reproductor **OMXPlayer** en la **Raspberry Pi**.
+
+```
+sudo apt-get install omxplayer      
+```
+
 
 El proyecto consiste en **reproducir videos** de las diferentes **fases** del día **(Amanecer, Día, Atardecer, Anochecer)** al **pulsar el boton** correspondiente de cada acción.
 
