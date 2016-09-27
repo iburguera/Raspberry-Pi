@@ -13,8 +13,10 @@ GPIO.setup(22, GPIO.IN) # GPIO 22 como entrada
 pathVideos = "/home/pi/VideoHD/Belen"                                   # Directorio donde se encuentran los videos en HD
 
 def reproducirVideos(nameVideo):
-        command = "omxplayer -p -o hdmi %s/%s.mp4" % (pathVideos,nameVideo)
-        os.system(command)
+	command1 = "sudo killall -s 9 omxplayer.bin"
+	os.system(command1)
+	command2 = "omxplayer -p -o hdmi %s/%s.mp4 &" % (pathVideos,nameVideo)
+	os.system(command2)
         print "Reproduciendo el Video: %s " % nameVideo
 
 def programaPrincipal():
