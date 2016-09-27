@@ -1,15 +1,18 @@
-### PROGRAMA PYTHON PARA REPRODUCIR VIDEOS EN RASPBERRY PI ###
+### SCRIPT PYTHON PARA REPRODUCIR VIDEOS EN RASPBERRY PI ###
 
 
 
 Este mini proyecto consiste en reproducir videos almacenados en la **SD** de la **Raspberry Pi** al pulsar los botones conectados a la placa. Tenemos que instalar el reproductor **OMXPlayer** en la **Raspberry Pi**.
+
+El Bash Script **launcher.sh** se ejecuta al inicio de la Raspberry Pi a traves de una tarea **cron**. 
+Este script en bash se encarga de ejecutar otro script en python **pythonReproducirVideos.py**. Este script se encargará de recopilar informacion de los pines **GPIO** de la Raspberry Pi.
 
 ```
 sudo apt-get install omxplayer      
 ```
 
 
-El proyecto consiste en **reproducir videos** de las diferentes **fases** del día **(Amanecer, Día, Atardecer, Anochecer)** al **pulsar el boton** correspondiente de cada acción.
+El objetivo de este proyecto consiste en **reproducir videos** de las diferentes **fases** del día **(Amanecer, Día, Atardecer, Anochecer)** al **pulsar el boton** correspondiente de cada acción.
 
 El proyecto final irá **sin botones** ya que la señal de **Trigger** nos la dará otro equipo. 
 
