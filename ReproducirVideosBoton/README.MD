@@ -33,4 +33,24 @@ Al pulsar cualquiera de estos botones, le ordenamos a la placa que reproduzca el
 
 Para ello tenemos que conectar el cable **HDMI** de la placa al **monitor** o **Televisor**.
 
+## Eliminar letras de log en la carga de la Raspberry Pi ##
+
+1 - Raspberry Pi Login sin texto de carga modificar el fichero cmdline.txt:
+     
+```bash
+     sudo nano /boot/cmdline.txt
+```
+Resultado:
+
+```bash
+      dwc_otg.lpm_enable=0 console=serial0,115200 console=tty3 root=/dev/mmcblk0p2 rootfstype=ext4 elevator=deadline fsck.repair=yes rootwait loglevel=3 quit logo.nologo vt.global_cursor_default=0
+```
+
+2- Deshabitar el prompt para que no aparezca el Login (SSH sigue funcionando correctamente)
+
+```bash
+       sudo systemctl disable getty@tty1.service   # Disables tty1 service on the screen  <- Utilizamos este comando solo
+     # sudo systemctl enable getty@tty1.service    # Enables  tty1 service on the screen
+ ```
+
 Ver el codigo para entender mejor el funcionamiento del programa.
